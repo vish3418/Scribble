@@ -13,6 +13,11 @@
       
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="styling.css" rel="stylesheet">
+    <style>
+        .container{
+            margin-top:100px;
+        }  
+    </style>
   </head>
   <body>
     <nav role="navigation" class="navbar navbar-custom navbar-fixed-top">
@@ -44,10 +49,16 @@
         </div>
       </nav>
       
-      <!--Sign up button-->
+<!--      CONTAINER FOR LOGIN PAGE-->
       
-      <div class="jumbotron" id="myContainer" >
-          <button type="button" class="btn btn-lg gold signup" style="padding-left: calc(100vw-100%);" data-target="#signupModal" data-toggle="modal">Sign Up</button>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+                <div>
+                    <button id="newNote" type="button" class="btn btn-info">New Note</button>
+                </div>
+            </div>
+        </div>
       </div>
       
 <!--      BOTTOM PANEL-->
