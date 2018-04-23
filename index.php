@@ -12,7 +12,7 @@
     <link href="styling.css" rel="stylesheet">
   </head>
   <body>
-    <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             
             <div class="navbar-header">
