@@ -1,3 +1,5 @@
+<!--DEFAULT CODE FROM BOOTSRAP WEBSITE-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,7 +9,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Scribble</title>
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap  Section-->
+      
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="styling.css" rel="stylesheet">
   </head>
@@ -38,6 +41,23 @@
             </div>
         </div>
       </nav>
+      
+      <!--Sign up button-->
+      
+      <div class="jumbotron" id="myContainer" >
+          <button type="button" class="btn btn-lg gold signup" style="padding-left: calc(100vw-100%);">Sign Up</button>
+      </div>
+      
+<!--      BOTTOM PANEL-->
+      
+      <div class="footer">
+          <div class="container" style="padding-left: calc(100vw-100%);">
+            <p>
+                <font color="white"> Made by Bharat Bodapati, Siddharth Dhar, Vishva Pandya
+                </font>
+            </p>
+          </div>
+      </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
