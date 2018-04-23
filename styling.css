@@ -45,6 +45,17 @@ body {
     width:100%;
 }
 
+/* Login and Submit form buttons styling */
+.btn green {
+    background-color: transparent;
+}
+.submitGold {
+    background-color: rgba(197,179,88,0.8);
+}
+.submitGold:hover{
+    background-color: rgb(197,179,88);
+}
+
 /*DOWNLOADED FROM http://twitterbootstrap3navbars.w3masters.nl*/
 
 .navbar-custom, .footer {

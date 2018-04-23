@@ -15,7 +15,7 @@
     <link href="styling.css" rel="stylesheet">
   </head>
   <body>
-    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <nav role="navigation" class="navbar navbar-custom navbar-fixed-top">
         <div class="container-fluid">
             
             <div class="navbar-header">
@@ -35,7 +35,7 @@
                     <li class="active"><a href=#>Who are we</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href=#>Login</a></li>
+                    <li class="active"><a href="#loginModal" data-toggle="modal">Login</a></li>
                 </ul>
                 
             </div>
@@ -45,7 +45,7 @@
       <!--Sign up button-->
       
       <div class="jumbotron" id="myContainer" >
-          <button type="button" class="btn btn-lg gold signup" style="padding-left: calc(100vw-100%);">Sign Up</button>
+          <button type="button" class="btn btn-lg gold signup" style="padding-left: calc(100vw-100%);" data-target="#signupModal" data-toggle="modal">Sign Up</button>
       </div>
       
 <!--      BOTTOM PANEL-->
@@ -58,6 +58,84 @@
             </p>
           </div>
       </div>
+<!--   Login Form -->
+      <form style="background-color: #0e0f0f" method="post" id="loginForm">
+          <div class="modal" id="loginModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" data-dismiss="modal">
+                     &times;
+                    </button>
+                    <h4 id="myModalLabel">
+                        Login:
+                    </h4>
+                  </div>
+                  <div class="modal-body">
+                      <div class="form-group">
+                            <label for="loginemail" class ="sr-only">Email Address:</label>
+                            <input class="form-control" type="text" name="Email Address" id="loginemail" placeholder="Email Address/Username" maxlength="100">
+                      </div>
+                      <div class="form-group">
+                            <label for="loginpassword" class ="sr-only">Password:</label>
+                            <input class="form-control" type="password" name="password" id="loginpass" placeholder="Password" maxlength="100">
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                      <input class="btn btn-lng submitGold" name="signup" type="submit" value="Go">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Return
+                      </button>
+                      
+                  </div>
+                </div>
+              </div>
+          </div>
+      
+      </form>
+<!--  Signup Form -->      
+      <form method="post" id="signupForm">
+          <div class="modal" id="signupModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" data-dismiss="modal">
+                     &times;
+                    </button>
+                    <h4 id="myModalLabel">
+                        Sign up for free here:
+                    </h4>
+                  </div>
+                  <div class="modal-body">
+                      <div class="form-group">
+                            <label for="email" class ="sr-only">Email Address:</label>
+                            <input class="form-control" type="text" name="Email Address" id="email"placeholder="Email Address" maxlength="100">
+                      </div>
+                      <div class="form-group">
+                            <label for="username" class ="sr-only">Username:</label>
+                            <input class="form-control" type="username" name="Username" id="username" placeholder="Username" maxlength="100">
+                      </div>
+                      <div class="form-group">
+                            <label for="password" class ="sr-only">Password:</label>
+                            <input class="form-control" type="password" name="password" id="password" placeholder="Choose a password" maxlength="100">
+                      </div>
+                      <div class="form-group">
+                            <label for="confirm" class ="sr-only">Confirm:</label>
+                            <input class="form-control" type="confirm" name="confirm" id="confirm" placeholder="Confirm Password" maxlength="100">
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                      <input class="btn btn-lng submitGold" name="signup" type="submit" value="Sign up">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Return
+                      </button>
+                      
+                  </div>
+                </div>
+              </div>
+          </div>
+      
+      </form>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
