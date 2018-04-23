@@ -14,9 +14,29 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="styling.css" rel="stylesheet">
     <style>
-        .container{
-            margin-top:100px;
+        #container{
+            margin-top:120px;
         }  
+        
+        #textArea, #allNotes, #done{
+            display:none;
+        }
+        
+        #buttons{
+            margin-bottom:25px;
+        }
+        
+        textarea{
+            width: 100%;
+            max-width:100%;
+            font-size:16px;
+            line-height:1.5em;
+            border-left-width:20px;
+            border-color: aqua;
+            color: black;
+            background-color: floralwhite;
+            padding:10px;
+        }
     </style>
   </head>
   <body>
@@ -51,18 +71,28 @@
       
 <!--      CONTAINER FOR LOGIN PAGE-->
       
-      <div class="container">
+      <div class="container" id="container">
         <div class="row">
             <div class="col-md-offset-3 col-md-6">
-                <div>
+                
+                <div class="buttons">
                     <button id="newNote" type="button" class="btn btn-info btn-lg">New Note</button>
                     
-                    <button id="edit" type="button" class="btn btn-info btn-lg">Edit</button>
+                    <button id="edit" type="button" class="btn btn-info btn-lg pull-right">Edit</button>
                     
-                    <button id="done" type="button" class="btn btn-info btn-lg">Done</button>
+                    <button id="done" type="button" class="btn green btn-lg pull-right">Done</button>
                     
                     <button id="allNotes" type="button" class="btn btn-info btn-lg">All Notes</button>
                     
+                    <div id="textArea">
+                        <textarea rows="10">
+                        
+                        </textarea>
+                    </div>
+                    
+                    <div id="notes" class="notes">
+<!--                        Ajax call to a php file-->
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,7 +113,8 @@
       
       <form method="post" id="loginForm">
           <div class="modal" id="loginModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            
+              <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
                   <button class="close" data-dismiss="modal">
