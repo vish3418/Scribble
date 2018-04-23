@@ -55,7 +55,14 @@
         <div class="row">
             <div class="col-md-offset-3 col-md-6">
                 <div>
-                    <button id="newNote" type="button" class="btn btn-info">New Note</button>
+                    <button id="newNote" type="button" class="btn btn-info btn-lg">New Note</button>
+                    
+                    <button id="edit" type="button" class="btn btn-info btn-lg">Edit</button>
+                    
+                    <button id="done" type="button" class="btn btn-info btn-lg">Done</button>
+                    
+                    <button id="allNotes" type="button" class="btn btn-info btn-lg">All Notes</button>
+                    
                 </div>
             </div>
         </div>
