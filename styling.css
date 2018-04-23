@@ -11,6 +11,17 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+body#prof {
+    background: url("eng.jpg") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+body#mainpg {
+    background: url("belltower2.jpg") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 
 /*STYLING HOMEPAGE BUTTON AND TEXT*/

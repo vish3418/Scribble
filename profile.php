@@ -15,7 +15,8 @@
     <link href="styling.css" rel="stylesheet">
     <style>
         #container{
-            margin-top:120px;
+            margin-left:-63px;
+            margin-top:100px;
         }  
         
         #textArea, #allNotes, #done{
@@ -37,9 +38,17 @@
             background-color: floralwhite;
             padding:10px;
         }
+        table {
+            table-layout:fixed;
+        }
+        td {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+        }
     </style>
   </head>
-  <body id="mainpg">
+  <body id="prof">
     <nav role="navigation" class="navbar navbar-custom navbar-fixed-top">
         <div class="container-fluid">
             
@@ -69,30 +78,28 @@
         </div>
       </nav>
       
-<!--      CONTAINER FOR LOGIN PAGE-->
+<!--      CONTAINER FOR PROFILE PAGE-->
       
       <div class="container" id="container">
         <div class="row">
             <div class="col-md-offset-3 col-md-6">
                 
-                <div class="buttons">
-                    <button id="newNote" type="button" class="btn btn-info btn-lg">New Note</button>
-                    
-                    <button id="edit" type="button" class="btn btn-info btn-lg pull-right">Edit</button>
-                    
-                    <button id="done" type="button" class="btn green btn-lg pull-right">Done</button>
-                    
-                    <button id="allNotes" type="button" class="btn btn-info btn-lg">All Notes</button>
-                    
-                    <div id="textArea">
-                        <textarea rows="10">
-                        
-                        </textarea>
-                    </div>
-                    
-                    <div id="notes" class="notes">
-<!--                        Ajax call to a php file-->
-                    </div>
+                <h2>Profile: </h2>
+                <div class="table-responsive">
+                    <table class="table table hover table-condensed table-bordered">
+                        <tr>
+                            <td>Username</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td>hidden</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
