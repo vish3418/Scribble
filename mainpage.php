@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Scribble</title>
+    <title>Notes List:</title>
 
     <!-- Bootstrap  Section-->
       
@@ -30,12 +30,14 @@
             </div>
             <div class="navbar-collapse collapse" id="navbar-Collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href=#>Home</a></li>
+                    <li class="active"><a href=#>User Profile</a></li>
                     <li class="active"><a href=#>Contact Us</a></li>
                     <li class="active"><a href=#>Who are we</a></li>
+                    <li class="active"><a href=#>My Notes</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#loginModal" data-toggle="modal">Login</a></li>
+                    <li class="active"><a href=#>Logged in as <b>username</b></a></li>
+                    <li class="active"><a href="#" data-toggle="modal">Sign Out</a></li>
                 </ul>
                 
             </div>
