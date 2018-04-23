@@ -58,8 +58,10 @@
             </p>
           </div>
       </div>
+      
 <!--   Login Form -->
-      <form style="background-color: #0e0f0f" method="post" id="loginForm">
+      
+      <form method="post" id="loginForm">
           <div class="modal" id="loginModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -80,9 +82,56 @@
                             <label for="loginpassword" class ="sr-only">Password:</label>
                             <input class="form-control" type="password" name="password" id="loginpass" placeholder="Password" maxlength="100">
                       </div>
+                      <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="rememberme" id="rememberme">
+                                Remember me
+                            </label>
+                          <a class="pull-right" style="cursor: pointer" data-dismiss="modal" data-target="#forgotModal" data-toggle="modal">Forgot Password?</a>
+                      </div>
                   </div>
                   <div class="modal-footer">
-                      <input class="btn btn-lng submitGold" name="signup" type="submit" value="Go">
+                      <input class="btn btn-lng submitGold" name="login" type="submit" value="Go">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Return
+                      </button>
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal" data-target="#signupModal" data-toggle="modal">
+                        Register
+                      </button>
+                      
+                  </div>
+                </div>
+              </div>
+          </div>
+      
+      </form>
+      
+      
+<!-- Forgot Password Form -->
+      
+      <form method="post" id="forgotform">
+          <div class="modal" id="forgotModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" data-dismiss="modal">
+                     &times;
+                    </button>
+                    <h4 id="myModalLabel">
+                        Enter your email address:
+                    </h4>
+                    <h6 id="myModalLabel2">
+                        You will recieve an email within 5 minutes. 
+                    </h6>
+                  </div>
+                  <div class="modal-body">
+                      <div class="form-group">
+                            <label for="forgotemail" class ="sr-only">Email Address:</label>
+                            <input class="form-control" type="text" name="forgotemail" id="forgotemail" placeholder="Email Address" maxlength="100">
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                      <input class="btn btn-lng submitGold" name="login" type="submit" value="Go">
                     <button type="button" class="btn btn-default" data-dismiss="modal">
                         Return
                       </button>
@@ -93,8 +142,10 @@
           </div>
       
       </form>
-<!--  Signup Form -->      
-      <form method="post" id="signupForm">
+      
+<!--  Signup Form -->  
+      
+      <form method="post" id="signupform">
           <div class="modal" id="signupModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -125,7 +176,7 @@
                       </div>
                   </div>
                   <div class="modal-footer">
-                      <input class="btn btn-lng submitGold" name="signup" type="submit" value="Sign up">
+                      <input class="btn btn-lng submitGold" name="signup" type="submit" value="Register">
                     <button type="button" class="btn btn-default" data-dismiss="modal">
                         Return
                       </button>
