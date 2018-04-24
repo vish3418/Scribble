@@ -30,6 +30,12 @@ body#whoare {
     background-size: cover;
 }
 
+body#contact{
+    background: url("gold.jpg") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 
 /*STYLING HOMEPAGE BUTTON AND TEXT*/
 
@@ -76,6 +82,13 @@ body#whoare {
     text-align: center;
     
         
+}
+
+.hey{
+    text-align: center;
+    margin-top: 150px;
+    margin-right: 300px;
+    margin-left: 350px;
 }
 
 /* Login and Submit form buttons styling */
