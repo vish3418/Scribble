@@ -158,13 +158,14 @@
                     </h4>
                   </div>
                   <div class="modal-body">
-                      <div class="form-group">
-                            <label for="email" class ="sr-only">Email Address:</label>
-                            <input class="form-control" type="text" name="Email Address" id="email"placeholder="Email Address" maxlength="100">
-                      </div>
+                      <div id="signupmessage"></div>
                       <div class="form-group">
                             <label for="username" class ="sr-only">Username:</label>
                             <input class="form-control" type="username" name="Username" id="username" placeholder="Username" maxlength="100">
+                      </div>
+                      <div class="form-group">
+                            <label for="email" class ="sr-only">Email Address:</label>
+                            <input class="form-control" type="text" name="email" id="email" placeholder="Email Address" maxlength="100">
                       </div>
                       <div class="form-group">
                             <label for="password" class ="sr-only">Password:</label>
@@ -172,7 +173,7 @@
                       </div>
                       <div class="form-group">
                             <label for="confirm" class ="sr-only">Confirm:</label>
-                            <input class="form-control" type="confirm" name="confirm" id="confirm" placeholder="Confirm Password" maxlength="100">
+                            <input class="form-control" type="password" name="confirm" id="confirm" placeholder="Confirm Password" maxlength="100">
                       </div>
                   </div>
                   <div class="modal-footer">
@@ -192,5 +193,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
