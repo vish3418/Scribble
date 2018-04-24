@@ -74,6 +74,7 @@
                     </h4>
                   </div>
                   <div class="modal-body">
+                      <div id="loginmessage"></div>
                       <div class="form-group">
                             <label for="loginemail" class ="sr-only">Email Address:</label>
                             <input class="form-control" type="text" name="Email Address" id="loginemail" placeholder="Email Address/Username" maxlength="100">
