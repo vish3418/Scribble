@@ -10,6 +10,7 @@ body {
     background: url("gateway-arch.jpg") no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
+     
 }
 body#prof {
     background: url("eng.jpg") no-repeat center center;
@@ -19,6 +20,12 @@ body#prof {
 }
 body#mainpg {
     background: url("belltower2.jpg") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body#whoare {
+    background: url("footballbest.jpg") no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -54,6 +61,21 @@ body#mainpg {
     bottom:0;
     text-align: center;
     width:100%;
+}
+
+.pictures{
+    background-color: transparent;
+    text-align: center;
+    margin-top: 150px;
+    margin-right: 300px;
+    margin-left: 350px;
+       
+}
+
+.Bharat{
+    text-align: center;
+    
+        
 }
 
 /* Login and Submit form buttons styling */

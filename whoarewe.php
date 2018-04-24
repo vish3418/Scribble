@@ -14,7 +14,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="styling.css" rel="stylesheet">
   </head>
-  <body>
+  <body id="whoare">
     <nav role="navigation" class="navbar navbar-custom navbar-fixed-top">
         <div class="container-fluid">
             
@@ -42,8 +42,17 @@
         </div>
       </nav>
       
-      <!--Sign up button-->
+      <!--Bharat Pic-->
       
+      
+      <!--About Me-->
+      <div class="pictures" id="description">
+          
+          <h1><img src="lebron.jpg" height="200" width="200" alt="Lebron James"></h1>
+          
+          <p><b><font color="white">Bharat Bodapati, Siddharth Dhar, and Vishva Pandya are Sophomore Computer Science majors at Purdue University. They all would like to pursue the Machine Learning and Software Engineering track and would like to one day start their own technical company.</font></b></p>
+          
+      </div>
     
       
 <!--      BOTTOM PANEL-->
