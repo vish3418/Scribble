@@ -45,6 +45,46 @@ $(function(){
     
     
     });
+    
+    $("textarea").keyup(function(){
+        //ajax call to update the task of id activenote
+        $.ajax({
+            url: "updatenote.php",
+            type: "POST",
+            //we need to send the current note content with its id to the php file
+            data: {note: $(this).val(), id:activeNote},
+            success: function (data){
+                if(data == 'error'){
+                    $('#alertContent').text("There was an issue updating the note in the database!");
+                    $("#alert").fadeIn();
+                }
+            },
+            error: function(){
+                $('#alertContent').text("There was an error with the Ajax Call. Please try again later.");
+                        $("#alert").fadeIn();
+            }
+
+        });
+        
+    });
+    
+    $("#allNotes").click(function(){
+        $.ajax({
+            url: "loadnotes.php",
+            success: function (data){
+                $('#notes').html(data);
+                showHide(["#addNote", "#edit", "#notes"], ["#allNotes", "#notePad"]);
+                clickonNote(); clickonDelete();
+            },
+            error: function(){
+                $('#alertContent').text("There was an error with the Ajax Call. Please try again later.");
+                        $("#alert").fadeIn();
+            }
+
+        });
+    
+    });
+
     //type note: : Ajax call to updatenote.php
   
     
