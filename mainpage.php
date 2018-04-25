@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -84,8 +89,7 @@
                     <li class="active"><a href="#">My Notes</a></li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#">Hello!<b><?php session_start();
-include('connection.php'); echo $_SESSION['username']?></b></a></li>
+                      <li><a href="#">Hello!<b></b></a></li>
                     <li><a href="index.php?logout=1">Sign out</a></li>
                   </ul>
               

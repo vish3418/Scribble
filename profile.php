@@ -68,7 +68,7 @@
                     <li class="active"><a href="mainpage.php">My Notes</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href=#>Logged in as <b><?php echo $_GET['username']?></b></a></li>
+                    <li class="active"><a href=#>Hello!<b></b></a></li>
                     <li class="active"><a href="index.php?logout=1">Sign Out</a></li>
                 </ul>
                 

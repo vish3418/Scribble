@@ -7,7 +7,7 @@ $(function(){
         url: "loadnotes.php",
         success: function (data){
             $('#notes').html(data);
-            //clickonNote(); clickonDelete();
+            clickonNote();
             
         },
         error: function(){
@@ -84,6 +84,21 @@ $(function(){
         });
     
     });
+    
+    function clickonNote(){              $(".noteheader").click(function(){
+            if(!editMode){
+                //update activeNote variable to id of note
+                activeNote = $(this).attr("id");
+
+                //fill text area
+                $("textarea").val($(this).find('.text').text());
+                //show hide elements
+                showHide(["#notePad", "#allNotes"], ["#notes", "#addNote", "#edit", "#done"]);
+                $("textarea").focus();
+            }
+        });
+    }
+
 
     //type note: : Ajax call to updatenote.php
   

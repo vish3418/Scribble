@@ -3,15 +3,17 @@ session_start();
 include('connection.php');
 
 //get the user_id
-$user_id = $_SESSION['user_id'];
+//$_SESSION['user_id'] = $_GET['user_id'];
+$user_id = $_GET['user_id']; 
 //run a query to delete empty notes
 $sql = "DELETE FROM notes WHERE note=''";
 $result = mysqli_query($link, $sql);
 if(!$result){
-    echo '<div class="alert alert-warning">An error occured!</div>'; exit;
+    echo '<div class="alert alert-warning">An error occured!</div>'; 
+    exit;
 }
 //run a query to look for notes corresponding to user_id
-$sql = "SELECT * FROM notes WHERE user_id ='$user_id' ORDER BY time DESC";
+$sql = "SELECT * FROM notes WHERE user_id2 ='$user_id' ORDER BY time DESC";
 
 //shows notes or alert message
 if($result = mysqli_query($link, $sql)){

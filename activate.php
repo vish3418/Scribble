@@ -17,14 +17,11 @@ $sql = "UPDATE users SET activation='activated' WHERE (email='$email' AND activa
 
 $result = mysqli_query($link, $sql);
 
-if(mysqli_affected_rows($link)) {
     
     echo '<div class="alert alert-success">You have been activated.</div>';
     echo '<a href="index.php" type="button" class="btn-lg btn-success">Log in<a/>';
     
-}else{
-    echo '<div class="alert alert-danger">Not activated.</div>';
-}
+
 
 
 
