@@ -30,9 +30,9 @@
             </div>
             <div class="navbar-collapse collapse" id="navbar-Collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href=#>Home</a></li>
-                    <li class="active"><a href=#>Contact Us</a></li>
-                    <li class="active"><a href=#>Who are we</a></li>
+                    <li class="active"><a href="index.php">Home</a></li>
+                    <li class="active"><a href="contactus.php">Contact Us</a></li>
+                    <li class="active"><a href="whoarewe.php">Who are we</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#loginModal" data-toggle="modal">Login</a></li>
@@ -77,11 +77,11 @@
                       <div id="loginmessage"></div>
                       <div class="form-group">
                             <label for="loginemail" class ="sr-only">Email Address:</label>
-                            <input class="form-control" type="text" name="Email Address" id="loginemail" placeholder="Email Address/Username" maxlength="100">
+                            <input class="form-control" type="text" name="loginemail" id="loginemail" placeholder="Email Address/Username" maxlength="100">
                       </div>
                       <div class="form-group">
                             <label for="loginpassword" class ="sr-only">Password:</label>
-                            <input class="form-control" type="password" name="password" id="loginpass" placeholder="Password" maxlength="100">
+                            <input class="form-control" type="password" name="loginpassword" id="loginpassword" placeholder="Password" maxlength="100">
                       </div>
                       <div class="checkbox">
                             <label>
