@@ -48,9 +48,10 @@
       <!--About Me-->
       <div class="pictures" id="description">
           
-          <h1><img src="lebron.jpg" height="200" width="200" alt="Lebron James"></h1>
+          <h1><img src="Bharat.jpg" height="150" width="150" alt="Bharat Bodapati"> &ensp; <img src="sid.jpg" height="150" width="150" alt="Siddharth Dhar"> &ensp; <img src="vish.jpg" height="150" width="150" alt="Vishva Pandya"></h1>
           
-          <p><b><font color="white">Bharat Bodapati, Siddharth Dhar, and Vishva Pandya are Sophomore Computer Science majors at Purdue University. They all would like to pursue the Machine Learning and Software Engineering track and would like to one day start their own technical company.</font></b></p>
+          
+          <p><b><font color="white">Bharat Bodapati, Siddharth Dhar, and Vishva Pandya are Sophomore Computer Science majors at Purdue University. They all would like to pursue the Machine Learning and Software Engineering tracks and would like to one day start their own technical company.</font></b></p>
           
       </div>
     

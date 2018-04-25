@@ -19,7 +19,7 @@ body#prof {
     
 }
 body#mainpg {
-    background: url("belltower2.jpg") no-repeat center center;
+    background: url("gateway-arch.jpg") no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -72,7 +72,8 @@ body#contact{
 .pictures{
     background-color: transparent;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 200px;
+    margin-bottom: 200px;
     margin-right: 300px;
     margin-left: 350px;
        
@@ -84,6 +85,7 @@ body#contact{
         
 }
 
+/*This is the contact us */
 .hey{
     text-align: center;
     margin-top: 150px;
