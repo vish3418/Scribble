@@ -9,7 +9,7 @@ session_start();
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Notes</title>
+    <title>Boiler Posts</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="styling.css" rel="stylesheet">
       <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -74,7 +74,7 @@ session_start();
             
               <div class="navbar-header">
               
-                  <a class="navbar-brand">Online Notes</a>
+                  <a class="navbar-brand">Scribble</a>
                   <button type="button" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
                       <span class="sr-only">Toggle navigation</span>
                       <span class="icon-bar"></span>
@@ -86,7 +86,7 @@ session_start();
               <div class="navbar-collapse collapse" id="navbarCollapse">
                   <ul class="nav navbar-nav">
                     <li><a href="profile.php">Profile</a></li>
-                    <li class="active"><a href="#">My Notes</a></li>
+                    <li class="active"><a href="#">Boiler Posts</a></li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
                       <li><a href="#">Hello!<b></b></a></li>
@@ -111,10 +111,10 @@ session_start();
           <div class="row">
               <div class="col-md-offset-3 col-md-6">
                   <div class="buttons">
-                      <button id="addNote" type="button" class="btn btn-info btn-lg">Add Note</button>
+                      <button id="addNote" type="button" class="btn btn-info btn-lg">Add Post</button>
                       <button id="edit" type="button" class="btn btn-info btn-lg pull-right">Edit</button>
                       <button id="done" type="button" class="btn green btn-lg pull-right">Done</button>
-                      <button id="allNotes" type="button" class="btn btn-info btn-lg">All Notes</button>
+                      <button id="allNotes" type="button" class="btn btn-info btn-lg">All Posts</button>
                   </div>
                   
                   <div id="notePad">
@@ -130,9 +130,13 @@ session_start();
       </div>
 
     <!-- Footer-->
+      /* taken from developmentisland */
       <div class="footer">
-          <div class="container">
-              <p>DevelopmentIsland.com Copyright &copy; 2015-<?php $today = date("Y"); echo $today?>.</p>
+          <div class="container" style="padding-left: calc(100vw-100%);">
+            <p>
+                <font color="white"> Made by Bharat Bodapati, Siddharth Dhar, Vishva Pandya
+                </font>
+            </p>
           </div>
       </div>
 
